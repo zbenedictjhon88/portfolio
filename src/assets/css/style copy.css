@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+/* main color #323647 */
+/* light color #F4F5FB */
+/* dark color #222C30  */
+
+/* Custom css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222C30 !important;
+  font-family: 'Roboto Mono', monospace;
+  color: #F4F5FB !important;
+}
+
+.bc-semi-light {
+  background-color: #323647;
+}
+
+.navbar {
+  background-color: #323647;
+}
+
+.navbar .navbar-brand {
+  font-size: 32px !important;
+  font-weight: bold;
+  color: #F4F5FB;
+}
+
+.navbar .nav-link {
+  color: #F4F5FB;
+  cursor: pointer;
+}
+
+.navbar .nav-link:hover {
+  color: #222C30;
+  cursor: pointer;
+}
+
+.navbar .active {
+  color: #ff9000 !important;
+  font-weight: bold;
+}
+
+.btn {
+  border: none !important;
+  padding: 15px 30px !important;
+}
+
+.btn-primary {
+  background-color: #222C30 !important;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: white !important;
+  color: #222C30 !important;
+}
+
+
+/* Added css */
+.p-auto {
+  padding: 100px 200px;
+}
+
+.section {
+  color: #F4F5FB;
+  padding: 100px 200px;
+}
+
+.section .section-title {
+  color: #ff9000;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  border-bottom: solid #ff9000 1px;
+  padding-bottom: 10px;
+}
+
+.short-intro {
+  padding-top: 75px;
+}
+
+.short-intro small {
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ff9000;
+}
+
+.short-intro h1 {
+  font-size: 54px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.short-intro h6 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #ff9000;
+}
+
+.short-intro p {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.banner-img {
+  top: 0;
+  position: relative;
+  margin-top: -100px;
+  height: 700px;
+}
+
+.header-title .header-line {
+  align-self: center;
+  background-color: #3c475c;
+  display: block;
+  flex: 1 1;
+  height: 1px;
+  max-width: 350px
+}
