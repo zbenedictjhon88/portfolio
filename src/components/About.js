@@ -16,8 +16,8 @@ class About extends React.Component {
                             </div>
                             <div className="col-lg-6">
                                 <p>
-                                    Hello, my name is John and I enjoy creating things live on Internet.
-                                    My Interest in web development started in 2017 when I decided to create a UI design
+                                    Hello, my name is John Benedict Santos and I enjoy creating things live on Internet.
+                                    My Interest in web development started back in 2017 when I decided to create a web design
                                     using HTML and CSS and through these, I am eager to learn more about technology.
                                 </p>
                                 <p>

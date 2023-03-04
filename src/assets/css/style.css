@@ -237,6 +237,8 @@ ul li {
   font-size: clamp(24px, 8vw, 5px);
   margin-bottom: 10px;
   margin-left: 20px;
+  border-left: solid #ff9000 5px;
+  padding-left: 10px;
 }
 
 .pcard .pcard-content .pcard-body {
@@ -251,14 +253,15 @@ ul li {
 }
 
 .pcard .pcard-content .pcard-stack span {
-  background-color: #ff9000;
-  padding: 5px 15px;
-  margin-left: 5px;
+  background-color: #6f7681;
+  margin: 0 5px 5px 0;
+  padding: 2.5px 5px;
   font-size: 12px;
 }
 
 .pcard .pcard-content .pcard-exten {
   margin-top: 10px;
+  /* background-color: #ff9000; */
   padding: 0 10px;
 }
 
@@ -276,13 +279,14 @@ ul li {
 }
 
 .pcard .pcard-cover {
-  background-color: #ff9000;
+  background-color: blue;
   height: 350px;
   border-radius: 5px;
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-  mix-blend-mode: screen;
+  mix-blend-mode: luminosity;
+  box-shadow: 1px 1px 20px black;
   /* background-image: linear-gradient(to bottom, #323647 #222C30); */
 }
 
