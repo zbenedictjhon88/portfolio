@@ -47,8 +47,23 @@ p {
 }
 
 .ant-tabs-ink-bar {
-  /* background-color: #ff9000 !important; */
-  border-right: #ff9000 solid 2px !important;
+  border-right: #ff9000 solid 3.5px !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #222C30;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cbcac9;
+  /* border-radius: 10px; */
 }
 
 /* General css */
@@ -75,16 +90,28 @@ p {
   color: #ff9000 !important;
 }
 
+.btn-primary:hover {
+  background-color: #ff9000 !important;
+  color: #F4F5FB !important;
+}
+
 .btn-secondary {
   background-color: #ff9000 !important;
   color: #F4F5FB !important;
   border: solid #ff9000 2px !important;
 }
 
+.btn-secondary:hover {
+  background-color: transparent !important;
+  border: solid #ff9000 2px !important;
+  color: #ff9000 !important;
+}
+
 /* Added css */
 .drawer {
   background-color: #222C30 !important;
 }
+
 .btn-icon {
   font-size: 25px;
   color: #F4F5FB;
@@ -287,4 +314,29 @@ p {
 
 .pcard .pcard-cover:hover {
   mix-blend-mode: normal;
+}
+
+.footer {
+  background-color: #222C30;
+  text-align: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  display: inline;
+  margin-right: 10px;
+  font-size: 42px;
+}
+
+.footer ul li a {
+  color: #323647;
+}
+
+.footer ul li a:hover {
+  color: #F4F5FB;
 }

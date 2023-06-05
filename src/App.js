@@ -1,7 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import React, { useCallback } from "react";
-import { AlignRightOutlined, MenuFoldOutlined } from '@ant-design/icons';
+import { AlignRightOutlined, DownCircleFilled, DownCircleOutlined, DownloadOutlined, FacebookFilled, FacebookOutlined, MenuFoldOutlined } from '@ant-design/icons';
 import ScrollAnimation from "@stromsky/react-animate-on-scroll";
 import NavBar from './layouts/Navbar';
 import Header from "./layouts/Header";
@@ -24,13 +24,16 @@ class App extends React.Component {
 
           <NavBar />
 
-          <Layout.Content className="content">
+          <Layout.Content>
             <Home />
             <About />
             <Experience />
             <Project />
             <Contact />
           </Layout.Content>
+          <Layout.Footer className="footer">
+            <SocialMedia />
+          </Layout.Footer>
         </Layout>
       </React.Fragment>
     )
