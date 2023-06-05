@@ -16,36 +16,40 @@ class About extends React.Component {
                             </div>
                             <div className="col-lg-6">
                                 <p>
-                                    Hello, my name is John Benedict Santos and I enjoy creating things live on Internet.
-                                    My Interest in web development started back in 2017 when I decided to create a web design
-                                    using HTML and CSS and through these, I am eager to learn more about technology.
+                                    Hello, my name is John Benedict Santos, and I enjoy creating things live on the Internet.
+                                    My interest in web development started back in 2017 when I decided to create a web design using HTML and CSS.
+                                    Through these experiences, I have developed a strong eagerness to learn more about technology.
                                 </p>
                                 <p>
-                                    Fast-forward to today I'm currently working with an IT Company with a lot of experience in another technology.
+                                    Fast-forward to today, I am currently working with an IT company and have gained a
+                                    lot of experience in various technologies.
                                 </p>
                                 <p>
-                                    And also recently I launched a streaming website where anyone can watch drama, tv shows, and movies without any cost.
+                                    Additionally, I recently launched a streaming website where anyone can watch dramas,
+                                    TV shows, and movies without any cost.
                                 </p>
                                 <p>
-                                    Here are a few technologies I’ve been working and studying with recently:
+                                    Here are a few technologies I have been working on and studying recently:
                                 </p>
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <ul>
-                                            <li>Codeignither</li>
-                                            <li>React JS</li>
+                                            <li>Codeignither/Yii/PHP</li>
+                                            <li>React JS/Javascript/Jquery</li>
                                             <li>Firebase</li>
                                             <li>MySQL</li>
-                                            <li>Git</li>
+                                            <li>Git/Bit</li>
+                                            <li>HTML/HTML5</li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-6">
                                         <ul>
-                                            <li>Rest API/JSON</li>
+                                            <li>Rest API</li>
                                             <li>Django/Python</li>
-                                            <li>Flutter v3</li>
-                                            <li>Yii 1.1</li>
-                                            <li>Google Analytics</li>
+                                            <li>Flutter</li>
+                                            <li>JSON</li>
+                                            <li>CSS/CSS3</li>
+                                            <li>Google & Facebook APIs</li>
                                         </ul>
                                     </div>
                                 </div>

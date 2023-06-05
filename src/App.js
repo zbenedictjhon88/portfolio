@@ -1,6 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import React, { useCallback } from "react";
+import { AlignRightOutlined, MenuFoldOutlined } from '@ant-design/icons';
 import ScrollAnimation from "@stromsky/react-animate-on-scroll";
 import NavBar from './layouts/Navbar';
 import Header from "./layouts/Header";
@@ -12,19 +13,25 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import About from "./components/About";
 import SocialMedia from "./Parts/SocialMedia";
+import { Button, Layout } from "antd";
 
 
 class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar />
-        <Home />
-        <About />
-        <Experience />
-        <Project />
-        <Contact />
-        <SocialMedia />
+        <Layout>
+
+          <NavBar />
+
+          <Layout.Content className="content">
+            <Home />
+            <About />
+            <Experience />
+            <Project />
+            <Contact />
+          </Layout.Content>
+        </Layout>
       </React.Fragment>
     )
   }

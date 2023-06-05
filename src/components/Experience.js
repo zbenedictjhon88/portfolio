@@ -3,6 +3,48 @@ import React from "react";
 import { Element } from "react-scroll";
 import HeaderTitle from "../Parts/HeaderTitle";
 import Tab from "../Parts/Tab";
+import { Radio, Space, Tabs } from 'antd';
+
+const items = [
+    {
+        key: '1',
+        label: 'TSTC',
+        children: (
+            <>
+                <div className="job-experience">
+                    <h5>Junior Programmer 2 </h5>
+                    <small>Tranzend Solution and Trading Corp. (Aug. 2021 - Present)</small>
+                    <div className="achivements">
+                        <p>
+                            Wrote server-side and client-side code for different projects using PHP, HTML,
+                            CSS and JavaScript, specifically with CodeIgniter/Laravel frameworks and ReactJS library.
+                        </p>
+                        <p>Developed back-end components to connect applications with web services.</p>
+                        <p>Performed troubleshooting of technical issues within production environment.</p>
+                        <p>Regularly updated knowledge of latest industry trends in web development and related technologies.</p>
+                        <p>Worked closely with Project Managers and other developers to define parameters and plan detailed specifications with clear project deliverables and timelines to meet strict deadlines.</p>
+                        <p>Developed in-house applications designed for company needs.</p>
+                    </div>
+                </div>
+                <div className="job-experience">
+                    <h5>Junior Programmer </h5>
+                    <small>Tranzend Solution and Trading Corp. (Aug. 2018 - Aug. 2021)</small>
+                    <div className="achivements">
+                        <p>
+                            Worked as part of software development teams in the design, development,
+                            and support of both new and existing software products and systems; reporting status,
+                            monitoring issues/problems and recommending action plans.
+                        </p>
+                        <p>Configured Google analytics module for tracking the visitors for the website.</p>
+                        <p>Used Ajax for every page for dynamically displaying the data without a page refresh.</p>
+                        <p>Developed and maintained functions, procedures, triggers, indexes using MySQL database programming language.</p>
+                        <p>Identifying and solving issues caused by plugins or feeds under PHP, MySQL, HTML, CSS, Javascript and Jquery technology.</p>
+                    </div>
+                </div>
+            </>
+        ),
+    },
+];
 
 class Experience extends React.Component {
     render() {
@@ -14,29 +56,11 @@ class Experience extends React.Component {
                             <div className="col-lg-12">
                                 <HeaderTitle no="02." text="Where I've worked" />
                             </div>
-                            <div className="col-lg-8" style={{ margin: 'auto' }}>
-                                <ul className="nav nav-tabs" role="tablist">
-                                    <li className="nav-item" role="presentation">
-                                        <Tab status="active" id="tstc-tab" tabName="tab-tstc-panel" name="TSTC" />
-                                    </li>
-                                </ul>
-                                <div className="tab-content">
-                                    <div className="tab-pane fade show active" id="tab-tstc-panel" role="tabpanel" aria-labelledby="tstc-tab" tabindex="0">
-                                        <h4>Junior Programmer 2 - TSTC</h4>
-                                        <p>August 2018 - Present</p>
-                                        <ul>
-                                            <li>
-                                                Worked with a team of one developer and a team lead to build a school management system, server monitoring, and  so on.
-                                            </li>
-                                            <li>
-                                                Maintained and Enhanced existing system project.
-                                            </li>
-                                            <li>
-                                                Applied APIs such as Google API, Facebook API, and Mapbox API.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div className="col-lg-12" style={{ margin: 'auto' }}>
+                                <Tabs
+                                    tabPosition='left'
+                                    items={items}
+                                />
                             </div>
                         </div>
                     </div>

@@ -16,10 +16,9 @@ class Home extends React.Component {
                                     <h6>I build things for the web & mobile.</h6>
                                     <p>
                                         I’m a software engineer specializing in web development since 2018.
-                                        I focused on the client's request under the company.
                                     </p>
                                     <br />
-                                    <a href="mailto:zbenedictjhon97@gmail.com" className="btn btn-primary">
+                                    <a href="mailto:zbenedictjhon97@gmail.com" className="btn btn-primary mr-10">
                                         Hire Me
                                     </a>
                                     <a href="https://drive.google.com/file/d/1Jd0tw5LDiN2yqfHsSTlOoog31texfLZj/view" className="btn btn-secondary">

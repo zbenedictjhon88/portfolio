@@ -1,43 +1,49 @@
 import { Link } from "react-scroll";
 import Menu from "../Parts/Menu";
+import { AlignRightOutlined } from "@ant-design/icons";
+import React, { useState } from "react";
+import { Drawer } from "antd";
 
-function NavBar(props) {
+function NavBar() {
+
+    const [open, setOpen] = useState(false);
+
+    const showDrawer = () => {
+        setOpen(true);
+    };
+    const onClose = () => {
+        setOpen(false);
+    };
+
     return (
-        <nav className="navbar navbar-expand-xl sticky-top">
-            <div className="container">
+        <React.Fragment>
+            <nav className="navbar navbar-expand-xl sticky-top">
+                <div className="container">
 
-                <Link className='navbar-brand' to='/'>
-                    {/* <img src={logo} height={50} /> */}
-                    BEN
-                </Link>
+                    <Link className='navbar-brand' to='/'>
+                        BEN
+                    </Link>
 
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <Menu to="about" name="01. About" />
-                        </li>
-                        <li className="nav-item">
-                            <Menu to="experience" name="02. Experience" />
-                        </li>
-                        <li className="nav-item">
-                            <Menu to="project" name="03. Project" />
-                        </li>
-                        <li className="nav-item">
-                            <Menu to="contact" name="04. Contact" />
-                        </li>
-                    </ul>
-                    <div className="d-flex">
-                        <a href="mailto:zbenedictjhon97@gmail.com" class="btn btn-primary">
-                            Hire Me
-                        </a>
+                    <div className="justify-content-end">
+                        <div className="d-flex">
+                            <AlignRightOutlined onClick={showDrawer} className="btn-icon" />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+
+            <Drawer
+                placement="right"
+                onClose={onClose}
+                open={open}
+                className="drawer"
+            >
+                <p><Menu to="about" name="01. About" /></p>
+                <p><Menu to="experience" name="02. Experience" /></p>
+                <p><Menu to="project" name="03. Project" /></p>
+                <p><Menu to="contact" name="04. Contact" /></p>
+            </Drawer>
+        </React.Fragment>
     );
 }
 

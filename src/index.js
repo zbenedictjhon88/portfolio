@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import "./assets/css/style.css";
-import "animate.css/animate.min.css";
+import 'antd/dist/reset.css';
+// import "animate.css/animate.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 

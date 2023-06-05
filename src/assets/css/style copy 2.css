@@ -10,63 +10,21 @@
 body {
   margin: 0;
   padding: 0;
-  /* background-color: #222C30 !important; */
+  background-color: #222C30 !important;
   color: #F4F5FB !important;
 }
 
-p {
+p,
+ul li {
+  font-size: 14px !important;
   font-family: 'Roboto Mono', monospace !important;
 }
 
-.ant-drawer {
-  z-index: 1050 !important;
-}
-
-.ant-drawer .ant-drawer-header {
-  background-color: #222C30 !important;
-  color: #F4F5FB !important;
-}
-
-.navbar {
-  background-color: #323647;
-}
-
-.navbar .navbar-brand {
-  font-size: 32px !important;
-  font-weight: bold;
-  color: #F4F5FB;
-}
-
-.ant-tabs-nav-wrap {
-  /* background-color: #ff9000 !important; */
-  border-right: #6f7681 solid 1px;
-}
-
-.ant-tabs-tab-btn {
-  color: #ff9000 !important;
-}
-
-.ant-tabs-ink-bar {
-  /* background-color: #ff9000 !important; */
-  border-right: #ff9000 solid 2px !important;
-}
-
-/* General css */
-.section {
-  padding: 170px 10px;
-  background-color: #222C30 !important;
-}
-
-.mr-10 {
-  margin-right: 10px;
-}
-
 .btn {
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 10px 20px !important;
-  text-decoration: none !important;
-  font-size: 16px !important;
+  border: none;
+  margin: 5px;
+  padding: 10px 30px !important;
+  border-radius: 0px !important;
 }
 
 .btn-primary {
@@ -81,26 +39,102 @@ p {
   border: solid #ff9000 2px !important;
 }
 
-/* Added css */
-.drawer {
-  background-color: #222C30 !important;
+.navbar {
+  background-color: #323647;
 }
-.btn-icon {
-  font-size: 25px;
+
+.navbar .navbar-brand {
+  font-size: 32px !important;
+  font-weight: bold;
   color: #F4F5FB;
 }
 
+.navbar .nav-link {
+  color: #F4F5FB;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-link:hover {
+  color: #ff9000;
+  cursor: pointer;
+}
+
+.navbar .active {
+  color: #ff9000 !important;
+  font-weight: bold;
+}
+
+.nav-tabs {
+  /* background-color: black; */
+  border: none !important;
+  border-bottom: solid #ff9000 1px !important;
+}
+
+.nav-tabs .nav-item .nav-link {
+  padding: 15px 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #6f7681;
+  letter-spacing: 1px;
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+  border: none;
+  border-bottom: solid #ff9000 3px !important;
+}
+
+.nav-tabs .nav-item .active {
+  border: none;
+  border-bottom: solid #ff9000 3px !important;
+  background-color: transparent !important;
+  color: #F4F5FB !important;
+  font-weight: 700;
+}
+
+.tab-content .tab-pane {
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.tab-content .tab-pane h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.tab-content .tab-pane p {
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  font-size: 18px;
+  color: #6f7681;
+}
+
+.tab-content .tab-pane ul {
+  max-width: 500px;
+}
+
+.tab-content .tab-pane ul li {
+  margin-bottom: 20px !important;
+}
+
+
+/* Added css */
 .banner {
   padding: 100px 0px;
   background-color: #323647;
 }
 
-.banner .short-intro {
+.section {
+  padding: 170px 10px;
+}
+
+.short-intro {
   padding-top: 75px;
   padding-bottom: 25px;
 }
 
-.banner .short-intro small {
+.short-intro small {
   color: #ff9000;
   font-size: 18px;
   margin-left: 20px;
@@ -110,14 +144,14 @@ p {
   font-family: 'Roboto Mono', monospace;
 }
 
-.banner .short-intro h1 {
+.short-intro h1 {
   color: #F4F5FB;
   margin: 0;
   font-size: clamp(40px, 8vw, 80px);
   line-height: 1.1;
 }
 
-.banner .short-intro h6 {
+.short-intro h6 {
   color: #6f7681;
   font-size: clamp(25px, 6vw, 50px);
   line-height: 1.1;
@@ -126,7 +160,7 @@ p {
   font-weight: bold;
 }
 
-.banner .short-intro p {
+.short-intro p {
   color: #6f7681;
   font-size: clamp(14px, 5vw, 16px);
   margin: 10px 0 0;
@@ -186,35 +220,6 @@ p {
   border: dashed #ff9000 2px;
   /* border-top: dashed #ff9000 2px; */
   /* border-left: dashed #ff9000 2px; */
-}
-
-.job-experience {
-  color: #F4F5FB;
-  margin-bottom: 25px;
-}
-
-.job-experience h5 {
-  margin: 0;
-  font-size: 24px;
-  letter-spacing: 1.5px;
-}
-
-.job-experience small {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 600;
-  color: #6f7681;
-}
-
-.job-experience .achivements {
-  margin-top: 15px;
-  max-width: 70%;
-}
-
-.job-experience .achivements p {
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 14px;
 }
 
 .pcard {
@@ -287,4 +292,31 @@ p {
 
 .pcard .pcard-cover:hover {
   mix-blend-mode: normal;
+}
+
+.social-ul {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.social-ul .social-li {
+  list-style-type: none;
+  width: 50px;
+  text-align: center;
+  /* background-color: #6f7681; */
+  margin-top: 5px;
+  padding: 0 20px;
+}
+
+.social-ul .social-li a {
+  color: #6f7681;
+}
+
+.social-ul .social-li a .social-icon {
+  font-size: 32px;
 }
